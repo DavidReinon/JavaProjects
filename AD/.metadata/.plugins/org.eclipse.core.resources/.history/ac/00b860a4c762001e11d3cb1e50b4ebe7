@@ -1,0 +1,51 @@
+package Seccio1;
+
+import java.io.File;
+
+public class miniprojecteS1 {
+
+	public static void main(String[] args) {
+		// ADV: Haurà d’haver una gestió d’errors (como a mínim, controlar que
+		// existisca)
+		directori = new File(args[0]);
+		if (directori.exists()) {
+			System.out.println("No existe este directorio");
+			return;
+		}
+	}
+
+	private static File directori;
+
+	private String getInformacio(File file) {
+		String nombre = file.getName();
+		String tipus = file.isDirectory() ? "Directori" : "Archivo";
+		String ubicacio = file.getAbsolutePath();
+		String ultimaModificació = file.lastModified();
+		String mostrar = ("Nom: " + nombre + "Tipus: " + tipus + "Ruta:" + ubicacio + "Ultima modificació: ");
+		return mostrar;
+		// • Mostrar el nom, tipus (si es fitxer o directori), la ubicació (ruta
+		// completa), la data de l’última modificació en format data i si és
+		// ocult o no.
+		// • Si és un fitxer haurà de mostrar la seua grandària en bytes.
+		// • Si és un directori haurà de mostrar el nombre d’elements que
+		// conté, espai lliure, espai disponible i espai total.
+
+	}
+
+	private void crearCarpeta() {
+		// Crear una carpeta en directori local.
+	}
+
+	private void creaFitxer() {
+		// Crear un fitxer en la carpeta creada.
+
+	}
+
+	private void elimina() {
+		// Eliminar fitxers/carpetes.
+	}
+
+	private void renomena() {
+		// Renomena fitxers/carpetes
+	}
+}
