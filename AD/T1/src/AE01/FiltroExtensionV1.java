@@ -1,4 +1,4 @@
-package Seccio1;
+package AE01;
 
 import java.io.File;
 import java.io.FilenameFilter;

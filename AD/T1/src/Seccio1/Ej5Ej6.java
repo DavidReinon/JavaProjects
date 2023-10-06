@@ -27,7 +27,7 @@ public class Ej5Ej6 {
 		if (args.length == 2) {
 			String extension = args[1];
 			System.out.println("(Busqueda por extension)");
-			filtroExtensionV1 filtroExtension = new filtroExtensionV1(extension);
+			FiltroExtensionV1 filtroExtension = new FiltroExtensionV1(extension);
 			archivos = archivo.listFiles(filtroExtension);
 		} else {
 			System.out.println("(Todo el directorio)");
