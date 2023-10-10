@@ -61,6 +61,9 @@ tmp/
 local.properties
 .loadpath
 .factorypath
+**/.metadata
+**/.classpath
+
 
 ##############################
 ## NetBeans
