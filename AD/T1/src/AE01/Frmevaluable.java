@@ -45,7 +45,7 @@ public class Frmevaluable extends JFrame {
 		contentPane.setLayout(null);
 		
 		JTextArea textArea = new JTextArea();
-		textArea.setBounds(289, 24, 366, 355);
+		textArea.setBounds(272, 26, 366, 355);
 		contentPane.add(textArea);
 	}
 }
